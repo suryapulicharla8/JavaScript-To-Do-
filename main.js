@@ -99,10 +99,6 @@ function createCard() {
             console.log("hi")
         }
     }
-
-
-
-
     const removeitem = document.querySelectorAll(".removeIcon");
     removeitem.forEach(e => {
         e.addEventListener("click", (e) => {
@@ -139,10 +135,6 @@ function backToMainList(e) {
     containerSingle.style.display = "none";
 }
 
-
-
-
-
 function addingDataIntoCard(temp) {
     if (inputItem.value == "") {
         alert("Enter A Value")
@@ -168,7 +160,7 @@ function addingDataIntoCard(temp) {
             e.addEventListener("click", (e) => {
                 let selDiv = e.target;
                 selDiv.style.textDecoration = "line-through";
-                selDiv.style.color = "red"
+                selDiv.style.color = "green"
             })
         })
 
@@ -181,8 +173,6 @@ function addingDataIntoCard(temp) {
         selectedCardId = null;
     }
 }
-
-
 
 addNewListBtn.addEventListener("click", () => {
 
